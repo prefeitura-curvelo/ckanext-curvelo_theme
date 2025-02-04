@@ -9,7 +9,7 @@ with open(path.join(here, "README.md"), encoding="utf-8") as f:
     long_description = f.read()
 
 setup(
-    name="ckanext-curvelotheme",
+    name="ckanext-curvelo_theme",
     version="1.0.0",
     description="CKAN extension for Curvelo's city theme",
     long_description=long_description,
@@ -19,7 +19,7 @@ setup(
     keywords="",
     author="Edgar Zanella Alvarenha",
     author_email="e@vaz.i0",
-    url="https://github.com/prefeitura-curvelo/ckanext-curvelotheme/",
+    url="https://github.com/prefeitura-curvelo/ckanext-curvelo_theme/",
     license="Public Domain",
     packages=find_packages(exclude=["ez_setup", "examples", "tests"]),
     namespace_packages=["ckanext"],
@@ -29,6 +29,13 @@ setup(
     setup_requires=["wheel"],
     entry_points="""
         [ckan.plugins]
-        curvelotheme=ckanext.curvelo_theme.plugin:CurveloThemePlugin
+        curvelo_theme=ckanext.curvelo_theme.plugin:CurveloThemePlugin
     """,
+    message_extractors={
+        'ckanext': [
+            ('**.py', 'python', None),
+            ('**.js', 'javascript', None),
+            ('**/templates/**.html', 'ckan', None),
+        ],
+    }
 )
