@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<!--[if IE 9]> <html lang="pt_BR" class="ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="pt_BR"  > <!--<![endif]-->
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Miriam+Libre:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Miriam+Libre:wght@400;700&display=swap" rel="stylesheet">
+
+    <meta charset="utf-8" />
+      <meta name="csrf_field_name" content="_csrf_token" />
+      <meta name="_csrf_token" content="IjM2OTYwNmEwNWI3OTMyY2NkZDM0YmVkZTk3YzNiMDhmYmRmYWQ2MjEi.Z0iVJA.-EPNKbIwuzKW-11aSu1bfAUhCrk" />
+
+      <meta name="generator" content="ckan 2.12.0a0" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bem vindo - Curvelo Aberta</title>
+  </head>
+  <style>
+
+    body {
+      margin: 0;
+      font-family: "Inter";
+      font-weight: 500;
+    }
+
+    body h1 {
+
+      font-family: "IBM Plex Mono";
+      font-style: normal;
+      font-weight: 400;
+    }
+
+    #menu {
+      display: flex;
+      width: 100%;
+
+      justify-content: space-between;
+    }
+
+    .right-menu {
+      display: flex;
+      color: #0E6BEB;
+      margin-right: 30px;
+    }
+
+    .menu-item {
+      margin: 0 20px;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    a.menu-item {
+      color: #0E6BEB;
+      text-decoration: none;
+
+    }
+
+    .menu-item > img {
+      max-height: 40px;
+      margin-right: 10px;
+    }
+
+    .logo {
+      width: 200px;
+    }
+
+    .banner {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      padding-top: 80px;
+    }
+
+    .banner > .banner-title {
+      width: 100%;
+      margin: auto;
+      align-self: center;
+    }
+
+    .banner > .banner-title > h1 {
+      max-width: 1000px;
+      color: #0E6BEB;
+      text-align: center;
+      margin: auto;
+      font-size: 64px;
+    }
+
+    .banner > .banner-content {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      margin-top: 40px;
+      background: url('assets/background.png');
+    }
+
+    .search-box > label {
+      font-family: "Inter";
+      font-size: 24px;
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+
+    .search-box > form>  input {
+      border: 4px solid #A6C1DB;
+      border-radius: 50px;
+      font-size: 32px;
+      margin-top: 20px;
+      text-align: center;
+      width: 50%;
+      margin-bottom: 40px;
+      background: url('assets/search-icon.png') no-repeat scroll 98% 50%;
+      background-color: white;
+      background-size: 30px 30px;
+    }
+
+    .banner-content > .two-panels {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    .panel {
+      width: 40%;
+      margin: 20px;
+      border-radius: 30px;
+    }
+
+    .panel > h1 {
+      font-weight: bold;
+    }
+
+    .panel-1 {
+      background-color: #f5f5f5;
+      padding: 20px;
+    }
+
+    .panel-1 > img  {
+      max-width: 100%;
+    }
+
+
+    .panel-2 {
+      padding: 20px;
+      background-color: #E3EAF1;
+    }
+
+
+    .theme {
+      background: white;
+      border: 0;
+      border-radius: 50px;
+      vertical-align: middle;
+      display: inline-flex;
+      align-items: center;
+      padding: 5px 10px;
+      font-family: "Inter";
+      font-weight: bold;
+      margin: 10px;
+    }
+
+    .bottom-text {
+      max-width: 80%;
+      margin: auto;
+      margin-bottom: 80px;
+      margin-top: 40px;
+    }
+
+    #footer {
+      background-color: #0E6BEB;
+      padding: 40px 60px;
+      display: flex;
+    }
+
+    .footer-text {
+      color: white;
+      margin-left: 40px;
+      display: inline-flex;
+      align-content: center;
+    }
+
+    .footer-text > img {
+      max-height: 25px;
+      margin-right: 5px;
+    }
+
+    .footer-text > span {
+      margin-left: 10px;
+    }
+
+    .saiba-mais {
+      border-radius: 50px;
+      text-transform: uppercase;
+      background-color: #0E6BEB;
+      color: white;
+      padding: 20px;
+      margin-top: 80px;
+    }
+  </style>
+  <body>
+    <div id="header">
+
+      <div id="menu">
+
+        <img class="logo" src="https://curvelo.vaz.io/uploads/admin/2024-10-30-204654.824686curvelo-aberta-logo.png">
+        <div class="right-menu">
+          <a href="https://curvelo.vaz.io/dataset" class="menu-item"><img src="assets/dados.png"><span>Dados</span></a>
+          <a href="https://curvelo.vaz.io/mapas" class="menu-item"><img src="assets/mapas.png"><span>Mapas</span></a>
+        <div class="menu-item"><span>Sobre</span> </div>
+        </div>
+      </div>
+      <div class="banner">
+        <div class="banner-title">
+        <h1> Conheça e acesse dados abertos de Curvelo</h1>
+        </div>
+        <div class="banner-content">
+          <div class="search-box">
+            <label>
+            Pesquise por palavra-chave
+            </label>
+            <br/>
+            <form method="GET" action="https://curvelo.vaz.io/dataset/">
+            <input name="q" type="text"> 
+            </form>
+          </div>
+          <div class="two-panels">
+            <div class="panel panel-1">
+              <h1>Navegue pelos mapas</h1>
+              <img src="assets/curvelo-mapa.png">
+            </div>
+            <div class="panel panel-2">
+              <h1>Conheça os temas</h1>
+
+              <div class="themes">
+
+                <a class="theme">
+                  <img src="assets/admin-publica.png">
+                  <span>Administração Pública</span>
+                </a>
+
+                <a class="theme">
+                  <img src="assets/assistencia-social.png">
+                  <span>Assistência e Desenvolvimento Social</span>
+                </a>
+
+                <a class="theme">
+                  <img src="assets/saude.png">
+                  <span>Saúde</span>
+                </a>
+
+                <a class="theme">
+                  <img src="assets/solo.png">
+                  <span>Ordenamento Territorial e Uso do Solo</span>
+                </a>
+
+                <a class="theme">
+                  <img src="assets/educacao.png">
+                  <span>Educação</span>
+                </a>
+
+                <a class="theme">
+                  <img src="assets/financas.png">
+                  <span>Finanças Públicas</span>
+                </a>
+
+                <a class="theme">
+                  <img src="assets/habitacao.png">
+                  <span>Habitação</span>
+                </a>
+
+                <a class="theme">
+                  <img src="assets/infraestrutura.png">
+                  <span>Infraestrutura Urbana</span>
+                </a>
+
+                <a class="theme">
+                  <img src="assets/meio-ambiente.png">
+                  <span>Meio Ambiente</span>
+                </a>
+
+                <a class="theme">
+                  <img src="assets/seguranca.png">
+                  <span>Segurança Pública</span>
+                </a>
+
+                <a class="theme">
+                  <img src="assets/todos.png">
+                  <span>Veja todos</span>
+                </a>
+
+              </div>
+
+
+            </div>
+
+
+          </div>
+        </div>
+
+        <div class="bottom-text">
+          <b>Curvelo Aberta</b> é uma iniciativa da Prefeitura de Curvelo que disponibiliza informações sobre o município em formatos de dados abertos e geoespaciais. Esses dados podem ser livremente utilizados por qualquer pessoa, possibilitando a criação de pesquisas, reportagens, novas ferramentas e muito mais!
+          <br style="margin-bottom: 50px;">
+          <a class="saiba-mais">
+          Saiba mais
+          </a>
+
+        </div>
+      </div>
+      <div id="footer">
+        <div class="footer-logo">
+          <img src="assets/prefeitura-curvelo-logo.png">
+        </div>
+        <div class="footer-text">
+
+          <img src="assets/cc.png">
+          <img src="assets/copy.png">
+          <span>Desenvolvido pela <b>Open Knowledge Brasil</b>. O conteúdo deste site está disponível sob a licença Creative Commons Atribuição 4.0 Internacional, exceto quando especificada outra licença. Isso significa que pode ser compartilhado e reutilizado em trabalhos derivados, desde que citada a fonte.</span>
+        </div>
+
+      </div>
+    </div>
+
+
+  </body>
+</html>

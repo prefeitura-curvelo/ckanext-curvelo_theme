@@ -1,0 +1,113 @@
+    #menu {
+      display: flex;
+      width: 100%;
+
+      justify-content: space-between;
+    }
+
+    .right-menu {
+      display: flex;
+      color: #0E6BEB;
+      margin-right: 30px;
+    }
+
+    .menu-item {
+      margin: 0 20px;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    a.menu-item {
+      color: #0E6BEB;
+      text-decoration: none;
+
+    }
+
+    .menu-item > img {
+      max-height: 40px;
+      margin-right: 10px;
+    }
+
+    .logo {
+      width: 200px;
+    }
+
+
+.masthead {
+  background: none;
+}
+
+.masthead .navbar .logo img {
+  max-height: 100px;
+}
+
+.account-masthead {
+  background-color: #0E6BEB;
+}
+
+.homepage .module-search .search-form {
+  background-color: #0E6BEB;
+}
+
+.homepage .module-search .tags {
+  background-color: #58CAFF;
+}
+
+.site-footer {
+  background-color: #0E6BEB;
+}
+
+.btn { 
+  border-radius: 20px;
+}
+
+.masthead .main-navbar ul li a {
+	color: #0e6beb;
+	border: none;
+  border-radius: 0.3em;
+}
+
+.main {
+  background-image: url('/curvelo-background.png');
+  background-color: white;
+
+}
+
+.masthead .main-navbar ul li a:hover {
+	color: #0e6beb;
+	border: none;
+
+}
+
+.masthead .main-navbar ul li:hover a {
+	background: none;
+}
+
+.masthead .main-navbar ul li.active a {
+	color: #0e6beb;
+	border: none;
+	background: none;
+	text-decoration: underline;
+}
+
+.homepage .hero {
+  background: none;
+
+  background-image: url('/curvelo-background.png');
+}
+
+.homepage .module-feeds {
+  background: none;
+}
+
+.btn-primary {
+  background-color: #0E6BEB;
+  border-color: #0E6BEB;
+}
+
+.btn-primary:hover {
+  background-color: #58CAFF;
+  border-color: #0E6BEB;
+
+}
