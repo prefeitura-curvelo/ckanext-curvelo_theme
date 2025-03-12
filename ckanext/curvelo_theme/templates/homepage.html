@@ -62,7 +62,18 @@
     }
 
     .logo {
-      width: 200px;
+      width: 150px;
+    }
+
+    @media only screen and (max-width: 600px) {
+	.logo {
+		width: 120px;
+	}
+
+	.menu-item {
+		margin: 0 15px;
+	}
+
     }
 
     .banner {
@@ -70,7 +81,8 @@
       display: flex;
       justify-content: center;
       flex-direction: column;
-      padding-top: 80px;
+      padding-top: 40px;
+      padding-bottom: 40px;
     }
 
     .banner > .banner-title {
@@ -84,8 +96,15 @@
       color: #0E6BEB;
       text-align: center;
       margin: auto;
-      font-size: 64px;
+      font-size: 48px;
     }
+
+    @media only screen and (max-width: 600px) {
+    	.banner > .banner-title > h1 {
+    	  font-size: 30px;
+    	}
+    }
+
 
     .banner > .banner-content {
       display: flex;
@@ -115,10 +134,28 @@
       background-size: 30px 30px;
     }
 
+    @media only screen and (max-width: 600px) {
+	    .search-box > label {
+
+		font-size: 20px;
+	    }
+
+	    .search-box > form>  input {
+		    width: 90%;
+	    }
+
+    }
+
     .banner-content > .two-panels {
       display: flex;
       flex-direction: row;
       justify-content: center;
+    }
+
+    @media only screen and (max-width: 600px) {
+    	.banner-content > .two-panels {
+    	  flex-direction: column;
+    	}
     }
 
     .panel {
@@ -127,8 +164,23 @@
       border-radius: 30px;
     }
 
+    @media only screen and (max-width: 600px) {
+    	.panel {
+    	  width: 80%;
+	  align-self: center;
+    	}
+    }
+
     .panel > h1 {
       font-weight: bold;
+      font-size: 24px;
+    }
+
+    @media only screen and (max-width: 600px) {
+	    .panel > h1 {
+		font-size: 22px;		
+	    }
+
     }
 
     .panel-1 {
@@ -146,7 +198,6 @@
       background-color: #E3EAF1;
     }
 
-
     .theme {
       background: white;
       border: 0;
@@ -162,11 +213,22 @@
       color: black;
     }
 
+    a.theme > img {
+	width: 48px;
+    }
+
     .bottom-text {
       max-width: 80%;
       margin: auto;
-      margin-bottom: 80px;
       margin-top: 40px;
+    }
+
+    @media only screen and (max-width: 600px) {
+
+	.bottom-text {
+		margin-bottom: 0;
+    		text-align: center;
+	}
     }
 
     #footer {
@@ -191,13 +253,31 @@
       margin-left: 10px;
     }
 
+    @media only screen and (max-width: 600px) {
+	#footer {
+    	    flex-direction: column;
+	    text-align: center;
+	}
+
+	.footer-logo {
+	    margin-bottom: 20px;
+	}
+
+	.footer-text {
+		text-align: center;
+		margin-left: 0;
+	}
+    }
+
+
     .saiba-mais {
       border-radius: 50px;
       text-transform: uppercase;
       background-color: #0E6BEB;
       color: white;
       padding: 20px;
-      margin-top: 80px;
+      margin-top: 20px;
+      display: inline-block;
     }
   </style>
   <body>
@@ -303,7 +383,7 @@
 
         <div class="bottom-text">
           <b>Curvelo Aberta</b> é uma iniciativa da Prefeitura de Curvelo que disponibiliza informações sobre o município em formatos de dados abertos e geoespaciais. Esses dados podem ser livremente utilizados por qualquer pessoa, possibilitando a criação de pesquisas, reportagens, novas ferramentas e muito mais!
-          <br style="margin-bottom: 50px;">
+	  <br/>
           <a class="saiba-mais">
           Saiba mais
           </a>
@@ -315,10 +395,7 @@
           <img src="/prefeitura-curvelo-logo.png">
         </div>
         <div class="footer-text">
-
-          <img src="/cc.png">
-          <img src="/copy.png">
-          <span>Desenvolvido pela <b>Open Knowledge Brasil</b>. O conteúdo deste site está disponível sob a licença Creative Commons Atribuição 4.0 Internacional, exceto quando especificada outra licença. Isso significa que pode ser compartilhado e reutilizado em trabalhos derivados, desde que citada a fonte.</span>
+          <span><img src="/cc.png"><img src="/copy.png"> Desenvolvido pela <b>Open Knowledge Brasil</b>. O conteúdo deste site está disponível sob a licença Creative Commons Atribuição 4.0 Internacional, exceto quando especificada outra licença. Isso significa que pode ser compartilhado e reutilizado em trabalhos derivados, desde que citada a fonte.</span>
         </div>
 
       </div>
