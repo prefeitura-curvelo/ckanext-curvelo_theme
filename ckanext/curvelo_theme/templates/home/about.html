@@ -9,14 +9,24 @@
 {% block primary %}
   <article class="module" role="main">
     <div class="module-content">
-      {% block about %}
-        {% if g.site_about %}
-          {{ h.render_markdown(g.site_about) }}
-        {% else %}
-          <h1 class="page-heading">{{ _('About') }}</h1>
-          {% snippet 'home/snippets/about_text.html' %}
-        {% endif %}
-      {% endblock %}
+	<h1> Curvelo Aberta</h1>
+	<div style="display: flex">
+		<div>
+		<p/>
+		A <b>Curvelo Aberta</b> é uma <b>Plataforma de Dados Abertos e Georreferenciados</b> do Município de Curvelo, ela surgiu como uma parceria entre a Secretaria Planejamento, Orçamento e Gestão e a Secretaria Municipal de Administração, Políticas Sociais e Desenvolvimento Sustentável com o  objetivo de promover a transparência, facilitar o acesso à informação e <b>impulsionar a inovação</b> por meio do uso estratégico de dados públicos.
+		<p/>
+		Acreditamos que a <b>gestão pública eficiente</b> se fortalece com a participação cidadã e com a disponibilização de dados de forma clara e acessível. Por isso, reunimos em um só lugar informações relevantes sobre o território, finanças, infraestrutura, meio ambiente e diversos outros temas que impactam a vida da população com livre permissão de uso e reuso das bases. Com a <b>Curvelo Aberta</b>, pesquisadores, empreendedores, gestores públicos e cidadãos podem <b>explorar, analisar e utilizar os dados</b> para a tomada de decisões, promovendo o desenvolvimento sustentável e a melhoria da qualidade de vida em Curvelo. 
+		<p/>
+		Nosso compromisso é <b>manter a plataforma sempre atualizada</b> e em <b>constante evolução</b>, garantindo que as informações sejam <b>úteis, acessíveis e confiáveis</b>. Junte-se a nós nessa jornada por uma Curvelo mais aberta e conectada com o futuro!
+		<p/>
+		Acesse, explore e contribua: <b><a href="https://dados.curvelo.mg.gov.br/">Curvelo Aberta</a></b>, dados que transformam!
+
+		</div>
+		<div>
+		<img src="https://dados.curvelo.mg.gov.br/uploads/admin/2025-02-06-052313.446052curvelo-aberta-logo.png">
+		</div>
+
+	</div>
     </div>
   </article>
 {% endblock %}
