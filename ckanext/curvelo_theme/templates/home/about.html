@@ -7,16 +7,170 @@
 {% endblock %}
 
 {% block primary %}
+<style>
+.about-columns {
+	display: flex;
+	flex-direction: row;
+}
+
+@media only screen and (max-width: 600px) {
+	.about-columns {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+.team-photo {
+   max-width: 200px;
+
+   img {
+	max-width: 100%;
+   }
+}
+
+.team-text {
+  padding-left: 50px;
+}
+
+.team {
+  margin-top: 40px;
+}
+
+</style>
   <article class="module" role="main">
     <div class="module-content">
-      {% block about %}
-        {% if g.site_about %}
-          {{ h.render_markdown(g.site_about) }}
-        {% else %}
-          <h1 class="page-heading">{{ _('About') }}</h1>
-          {% snippet 'home/snippets/about_text.html' %}
-        {% endif %}
-      {% endblock %}
+	<h1> Curvelo Aberta</h1>
+	<div class="about-columns">
+		<div>
+		<p/>
+		A <b>Curvelo Aberta</b> é uma <b>Plataforma de Dados Abertos e Georreferenciados</b> do Município de Curvelo, ela surgiu como uma parceria entre a Secretaria Planejamento, Orçamento e Gestão e a Secretaria Municipal de Administração, Políticas Sociais e Desenvolvimento Sustentável com o  objetivo de promover a transparência, facilitar o acesso à informação e <b>impulsionar a inovação</b> por meio do uso estratégico de dados públicos.
+		<p/>
+		Acreditamos que a <b>gestão pública eficiente</b> se fortalece com a participação cidadã e com a disponibilização de dados de forma clara e acessível. Por isso, reunimos em um só lugar informações relevantes sobre o território, finanças, infraestrutura, meio ambiente e diversos outros temas que impactam a vida da população com livre permissão de uso e reuso das bases. Com a <b>Curvelo Aberta</b>, pesquisadores, empreendedores, gestores públicos e cidadãos podem <b>explorar, analisar e utilizar os dados</b> para a tomada de decisões, promovendo o desenvolvimento sustentável e a melhoria da qualidade de vida em Curvelo. 
+		<p/>
+		Nosso compromisso é <b>manter a plataforma sempre atualizada</b> e em <b>constante evolução</b>, garantindo que as informações sejam <b>úteis, acessíveis e confiáveis</b>. Junte-se a nós nessa jornada por uma Curvelo mais aberta e conectada com o futuro!
+		<p/>
+		Acesse, explore e contribua: <b><a href="https://dados.curvelo.mg.gov.br/">Curvelo Aberta</a></b>, dados que transformam!
+
+		</div>
+		<div>
+		<img src="https://dados.curvelo.mg.gov.br/uploads/admin/2025-02-06-052313.446052curvelo-aberta-logo.png">
+		</div>
+	</div>
+	<h1>A Equipe</h1>
+	<div class="about-columns">
+		<div class="team-photo">
+			<img src="/luiz-paulo.jpg">
+		</div>
+		<div class="team-text">
+		<h2>Luiz Paulo Glória Guimarães</h2>
+		<p/>
+		Prefeitura Municipal
+		<p/>
+		Líder do Projeto Curvelo Aberta, promovendo transparência e inovação como pilares da gestão municipal.
+
+		<p/>
+		Administrador Público graduado pela Universidade Federal de Lavras (UFLA), pós-graduando em Ciência Política.
+		</div>
+	</div>
+
+	<div class="about-columns team">
+		<div class="team-photo">
+			<img src="/pedro-vitor.jpg">
+		</div>
+		<div class="team-text">
+		<h2>Pedro Henrique Bianchi</h2>
+		<p/>
+		 Secretário Municipal de Fazenda e Secretário Municipal de Planejamento, Orçamento e Gestão (2021 a fevereiro/2025
+		<p/>
+		Gestor de Políticas Públicas e Mestre em Administração Pública e Governo
+		<p/>
+		<h2>
+		Vitor Augusto Assis Barcelos
+		</h2>
+		<p/>
+		Secretário Municipal de 
+		Administração, Políticas Sociais e Desenvolvimento Sustentável (2022 a fevereiro/2025), atual Secretário Municipal de Fazenda e Secretário Municipal de Planejamento, Orçamento e Gestão.
+		<p/>
+Administrador, Especialista em Gestão Financeira, Controladoria e Auditoria e Gestão Estratégica de Negócios
+
+		</div>
+	</div>
+
+	<div class="about-columns team">
+		<div class="team-photo">
+			<img src="/vitoria.jpg">
+		</div>
+		<div class="team-text">
+		<h2>Vitória Ap. Barboza Figueredo</h2>
+		<p/>
+		Gestora da Plataforma e do Núcleo de Dados de Curvelo
+		<p/>
+		Engenheira Civil, Especialista em Gestão de Projetos e Metodologias Ágeis
+
+		</div>
+	</div>
+
+	<div class="about-columns team">
+		<div class="team-photo">
+			<img src="/anne.jpg">
+		</div>
+		<div class="team-text">
+		<h2>Anne J. S. Smith Xavier</h2>
+		<p/>
+		Assessora Jurídica da Secretaria Municipal de Fazenda e da Secretaria Municipal de Planejamento, Orçamento e Gestão
+		<p/>
+		Advogada, Especialista em Direito Público
+
+		</div>
+	</div>
+
+	<div class="about-columns team">
+		<div class="team-photo">
+			<img src="/jefferson.png">
+		</div>
+		<div class="team-text">
+		<h2>Jefferson Pereira da Silva </h2>
+		<p/>
+		Fiscal de Obras e Gestor dos Dados Georreferenciados 
+		<p/>
+		Engenheiro Civil, Especialista em Segurança do Trabalho
+		</div>
+	</div>
+
+
+	<div class="about-columns team">
+		<div class="team-photo">
+			<img src="/mattheus.jpg">
+		</div>
+		<div class="team-text">
+		<h2>Mattheus Henrique Dias Queiroz </h2>
+		<p/>
+		Assessor Técnico do Dep. de Cadastro Imobiliário e Gestor dos Dados Georreferenciados 
+		<p/>
+		Técnico em Edificações, Graduando em Engenharia Civil pelo CEFET-MG
+		</div>
+	</div>
+
+	<h1>Parceria</h1>
+
+	<div class="about-columns team">
+		<div class="team-photo">
+			<img src="/okfn-br.png">
+		</div>
+		<div class="team-text">
+		<p/>
+		A equipe do <b>Curvelo Aberta</b> agradece imensamente à <b>Open Knowledge Brasil</b> pela <b>parceria e colaboração</b> ao longo de todo o <b>desenvolvimento da plataforma</b>. Sua experiência e compromisso com a transparência e os dados abertos foram essenciais para aprimorar a qualidade das informações disponibilizadas, fortalecendo a cultura de acesso aos dados e promovendo uma gestão pública mais inovadora e acessível!
+		</div>
+	</div>
+
+	<div class="about-columns team">
+		<div class="team-photo">
+			<h2>Agradecimentos<h2>
+		</div>
+		<div class="team-text">
+		Gostaríamos de expressar nossa profunda gratidão ao ex-secretário Pedro Henrique Bianchi, que esteve presente desde a idealização da Plataforma e ao Engenheiro Civil Adelson Mártir Silva (ex-membro da equipe), cuja expertise foi essencial no levantamento e na organização dos Dados Georreferenciados.
+		</div>
+	</div>
     </div>
   </article>
 {% endblock %}
