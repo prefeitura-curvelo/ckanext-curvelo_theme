@@ -13,11 +13,25 @@
 	flex-direction: row;
 }
 
+.fale-conosco {
+	display: flex;
+	justify-content: center;
+}
+
 @media only screen and (max-width: 600px) {
 	.about-columns {
 		display: flex;
 		flex-direction: column;
 	}
+}
+
+.saiba-mais {
+  border-radius: 50px;
+  text-transform: uppercase;
+  background-color: #0E6BEB;
+  color: white;
+  padding: 20px;
+  margin-top: 80px;
 }
 
 .team-photo {
@@ -30,6 +44,13 @@
 
 .team-text {
   padding-left: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+    .team-text {
+      padding-left: 0;
+      padding-top: 20px;
+    }
 }
 
 .team {
@@ -151,6 +172,7 @@ Administrador, Especialista em Gestão Financeira, Controladoria e Auditoria e G
 		</div>
 	</div>
 
+	<p/>
 	<h1>Parceria</h1>
 
 	<div class="about-columns team">
@@ -171,6 +193,13 @@ Administrador, Especialista em Gestão Financeira, Controladoria e Auditoria e G
 		Gostaríamos de expressar nossa profunda gratidão ao ex-secretário Pedro Henrique Bianchi, que esteve presente desde a idealização da Plataforma e ao Engenheiro Civil Adelson Mártir Silva (ex-membro da equipe), cuja expertise foi essencial no levantamento e na organização dos Dados Georreferenciados.
 		</div>
 	</div>
+
+    <div class="fale-conosco">
+	<a class="saiba-mais" href="https://docs.google.com/forms/d/e/1FAIpQLSc42_LZ9sR7R-30B1CMGIXqE_lUGLZQK5B7a8sKTTCU0ITj2g/viewform">
+	Fale conosco
+	</a>
+    </div>
+
     </div>
   </article>
 {% endblock %}

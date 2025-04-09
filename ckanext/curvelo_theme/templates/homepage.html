@@ -106,6 +106,7 @@
     }
 
 
+  
     .banner > .banner-content {
       display: flex;
       flex-direction: column;
@@ -215,6 +216,7 @@
 
     a.theme > img {
 	width: 48px;
+	height: 48px;
     }
 
     .bottom-text {
@@ -235,18 +237,42 @@
       background-color: #0E6BEB;
       padding: 40px 60px;
       display: flex;
+      flex-direction: column;
     }
 
     .footer-text {
       color: white;
       margin-left: 40px;
+      margin-top: 20px;
       display: inline-flex;
       align-content: center;
+    }
+
+    .footer-first {
+	display: flex;
+	width: 100%;
+    }
+ 
+    @media only screen and (max-width: 600px) {
+
+	.footer_first {
+		flex-direction: column;
+	}
     }
 
     .footer-text > img {
       max-height: 25px;
       margin-right: 5px;
+    }
+
+    .footer-link {
+	margin-left: 20px;
+	color:white;
+    }
+
+    .footer-link a {
+	color: white;
+	text-decoration: none;
     }
 
     .footer-text > span {
@@ -267,6 +293,16 @@
 		text-align: center;
 		margin-left: 0;
 	}
+
+	.footer-first {
+		flex-direction: column;
+	}
+
+	.footer-link {
+		margin-left: 0;
+		margin-top: 20px;
+	}
+
     }
 
 
@@ -387,13 +423,33 @@
           <a class="saiba-mais">
           Saiba mais
           </a>
+	  <a class="saiba-mais" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSc42_LZ9sR7R-30B1CMGIXqE_lUGLZQK5B7a8sKTTCU0ITj2g/viewform">
+	 Fale conosco
+	  </a>
 
         </div>
       </div>
       <div id="footer">
-        <div class="footer-logo">
-          <img src="/prefeitura-curvelo-logo.png">
-        </div>
+	<div class="footer-first">
+	        <div class="footer-logo">
+	          <img src="/prefeitura-curvelo-logo.png">
+	        </div>
+		<div class="footer-link">
+			<a href="/sobre">Sobre <b>Curvelo Aberta</b></a>
+		</div>
+		<div class="footer-link">
+		<a  href="{{ api_url }}">{{ _('CKAN API') }}</a>
+		</div>
+		<div class="footer-link">
+		<a href="http://www.ckan.org/">{{ _('CKAN Association') }}</a>
+		</div>
+		<div class="footer-link">
+		<a href="http://www.opendefinition.org/okd/"><img src="{{ h.url_for_static('/base/images/od_80x15_blue.png') }}" alt="Open Data"></a>
+		</div>
+		<div class="footer-link">
+		{% trans %}<strong>Powered by</strong> <a class="hide-text ckan-footer-logo" href="http://ckan.org">CKAN</a>{% endtrans %}
+		</div>
+	</div>
         <div class="footer-text">
           <span><img src="/cc.png"><img src="/copy.png"> Desenvolvido pela <b>Open Knowledge Brasil</b>. O conteúdo deste site está disponível sob a licença Creative Commons Atribuição 4.0 Internacional, exceto quando especificada outra licença. Isso significa que pode ser compartilhado e reutilizado em trabalhos derivados, desde que citada a fonte.</span>
         </div>
