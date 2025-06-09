@@ -242,11 +242,21 @@
 
     .footer-text {
       color: white;
-      margin-left: 40px;
       margin-top: 20px;
       display: inline-flex;
       align-content: center;
     }
+
+    .footer-icons {
+	display: flex;
+	padding: 5px;
+	justify-content: center;
+    }
+
+    .footer-icons > img {
+	margin: 5px;
+    }
+
 
     .footer-first {
 	display: flex;
@@ -420,12 +430,12 @@
         <div class="bottom-text">
           <b>Curvelo Aberta</b> é uma iniciativa da Prefeitura de Curvelo que disponibiliza informações sobre o município em formatos de dados abertos e geoespaciais. Esses dados podem ser livremente utilizados por qualquer pessoa, possibilitando a criação de pesquisas, reportagens, novas ferramentas e muito mais!
 	  <br/>
-          <a class="saiba-mais">
+          <a class="saiba-mais" href="https://dados.curvelo.mg.gov.br/sobre">
           Saiba mais
           </a>
-	  <a class="saiba-mais" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSc42_LZ9sR7R-30B1CMGIXqE_lUGLZQK5B7a8sKTTCU0ITj2g/viewform">
+	  <!-- <a class="saiba-mais" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSc42_LZ9sR7R-30B1CMGIXqE_lUGLZQK5B7a8sKTTCU0ITj2g/viewform">
 	 Fale conosco
-	  </a>
+	  </a>-->
 
         </div>
       </div>
@@ -451,7 +461,10 @@
 		</div>
 	</div>
         <div class="footer-text">
-          <span><img src="/cc.png"><img src="/copy.png"> Desenvolvido pela <b>Open Knowledge Brasil</b>. O conteúdo deste site está disponível sob a licença Creative Commons Atribuição 4.0 Internacional, exceto quando especificada outra licença. Isso significa que pode ser compartilhado e reutilizado em trabalhos derivados, desde que citada a fonte.</span>
+	  <div class="footer-icons">
+          <img src="/cc.png"><img src="/copy.png"> 
+	  </div><div>Desenvolvido pela <b>Open Knowledge Brasil</b>. O conteúdo deste site está disponível sob a licença Creative Commons Atribuição 4.0 Internacional, exceto quando especificada outra licença. Isso significa que pode ser compartilhado e reutilizado em trabalhos derivados, desde que citada a fonte.
+	  </div>
         </div>
 
       </div>
