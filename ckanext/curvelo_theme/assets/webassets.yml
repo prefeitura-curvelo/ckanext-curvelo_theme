@@ -1,12 +1,10 @@
-# activity:
-#   filters: rjsmin
-#   output: activity/%(version)s_activity.js
-#   extra:
-#     preload:
-#       - base/main
-#   contents:
-#     - dashboard.js
-
+curvelo-js:
+  output: ckanext-curvelo-theme/%(version)s_curvelo.js
+  contents:
+      - main.js
+  extra:
+    preload:
+      - base/main
 curvelo-css:
   output: ckanext-curvelo-theme/%(version)s_curvelo_theme.css
   contents:
