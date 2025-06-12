@@ -245,7 +245,17 @@
       margin-top: 20px;
       display: inline-flex;
       align-content: center;
+      align-items: center;
     }
+
+    @media only screen and (max-width: 600px) {
+
+	.footer-text {
+		display: flex;
+		flex-direction: column;
+	}
+    }
+
 
     .footer-icons {
 	display: flex;
